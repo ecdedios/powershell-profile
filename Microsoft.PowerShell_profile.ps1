@@ -24,7 +24,7 @@ New-Alias -Name gpush -Value Set-GitPush
 function Set-GitPull { & git pull origin main $args }
 New-Alias -Name gpull -Value Set-GitPull
 
-function Set-PipInit { & pip install notebook numpy pandas scipy matplotlib plotly seaborn  }
+function Set-PipInit { & pip install notebook numpy pandas scipy matplotlib plotly seaborn scikit-learn }
 New-Alias -Name pipinit -Value Set-PipInit
 
 function Set-CreateVenv { & virtualenv venv -p C:\Users\Dd\AppData\Local\Programs\Python\Python38\python.exe }
