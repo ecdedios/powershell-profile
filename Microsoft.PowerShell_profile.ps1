@@ -1,6 +1,14 @@
-set-location "C:\Users\Dd\OneDrive\Documents\_github"
+cls
 
+write-host "DRAGONBLOOD 10.1"
+write-host ""
+write-host "Welcome, Sir Master D!"
+write-host "All systems operating within normal parameters."
+write-host ""
+
+Set-location "C:\Users\Dd\OneDrive\Documents\_github"
 function prompt {"Dd $(get-location)>"}
+
 Set-Alias -Name jn -Value jupyter-notebook
 
 function Get-GitInit { & git init $args }
@@ -24,7 +32,7 @@ New-Alias -Name gpush -Value Set-GitPush
 function Set-GitPull { & git pull origin main $args }
 New-Alias -Name gpull -Value Set-GitPull
 
-function Set-PipInit { & pip install notebook numpy pandas scipy matplotlib plotly seaborn scikit-learn }
+function Set-PipInit { & pip install notebook numpy pandas scipy matplotlib sklearn seaborn  }
 New-Alias -Name pipinit -Value Set-PipInit
 
 function Set-CreateVenv { & virtualenv venv -p C:\Users\Dd\AppData\Local\Programs\Python\Python38\python.exe }
